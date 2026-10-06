@@ -1,0 +1,58 @@
+{
+  "scannedPath": "/var/www/ecommerce-api",
+  "scanTimestamp": "2026-09-08T18:00:00Z",
+  "totalFilesCount": 5,
+  "isReadOnly": false,
+  "items": [
+    {
+      "name": ".env",
+      "type": "file",
+      "sizeBytes": 412,
+      "modifiedAt": "2026-09-01T10:15:30Z",
+      "isHidden": true,
+      "extension": null
+    },
+    {
+      "name": "README.md",
+      "type": "file",
+      "sizeBytes": 2840,
+      "modifiedAt": "2026-09-05T14:22:10Z",
+      "isHidden": false,
+      "extension": "md"
+    },
+    {
+      "name": "src",
+      "type": "directory",
+      "sizeBytes": null,
+      "modifiedAt": "2026-09-08T16:45:00Z",
+      "isHidden": false,
+      "extension": null,
+      "items": [
+        {
+          "name": "main.py",
+          "type": "file",
+          "sizeBytes": 15820,
+          "modifiedAt": "2026-09-08T16:40:12Z",
+          "isHidden": false,
+          "extension": "py"
+        },
+        {
+          "name": ".auth_cache",
+          "type": "file",
+          "sizeBytes": 1024,
+          "modifiedAt": "2026-09-08T11:05:00Z",
+          "isHidden": true,
+          "extension": null
+        }
+      ]
+    },
+    {
+      "name": "config.json",
+      "type": "file",
+      "sizeBytes": 1205,
+      "modifiedAt": "2026-09-07T09:30:00Z",
+      "isHidden": false,
+      "extension": "json"
+    }
+  ]
+}
