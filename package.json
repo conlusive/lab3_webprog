@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/conlusive/lab3_webprog/issues"
   },
-  "homepage": "https://github.com/conlusive/lab3_webprog#readme"
+  "homepage": "https://github.com/conlusive/lab3_webprog#readme",
+  "dependencies": {
+    "commander": "^15.0.0"
+  }
 }
