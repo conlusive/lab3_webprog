@@ -35,14 +35,32 @@ function toNumber(value) {
   return null;
 }
 
-// Відправляє JSON-відповідь
-function sendJson(res, status, data) {
-  const body = JSON.stringify(data);
+// Відправляє відповідь клієнту
+function respond(res, status, body) {
   res.writeHead(status, {
     'Content-Type': 'application/json; charset=utf-8',
     'Content-Length': Buffer.byteLength(body),
   });
   res.end(body);
+}
+
+// Формує JSON, за потреби записує його в --output і відправляє відповідь
+function sendJson(res, status, data) {
+  const body = JSON.stringify(data);
+
+  if (!options.output) {
+    respond(res, status, body);
+    return;
+  }
+
+  fs.writeFile(options.output, body, (err) => {
+    if (err) {
+      // відповідь не вдалося записати — повідомляємо про це клієнту
+      respond(res, 500, JSON.stringify({ error: 'Не вдалося записати відповідь у файл' }));
+      return;
+    }
+    respond(res, status, body);
+  });
 }
 
 // Читає файл NDJSON; callback(err, records) — error-first
