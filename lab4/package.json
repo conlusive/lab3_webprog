@@ -1,15 +1,17 @@
 {
-  "name": "lab4",
+  "name": "lab4-http-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Лабораторна робота №4: простий HTTP-сервер на Node.js (варіант 3)",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js",
+    "dev": "node --watch main.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kozopas Yaroslav",
   "license": "ISC",
   "dependencies": {
     "commander": "^15.0.0"
-  }
+  },
+  "type": "module"
 }
